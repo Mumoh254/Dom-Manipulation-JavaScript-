@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100%;
+            height: 100vh;
+            background: lightgray;
+            padding: 0% 1%;
+        }
+        .opn {
+            width: 98%;
+            height: 80%;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        .btn-opn {
+            height: 5rem;
+            width: 40%;
+            border: none;
+            border-radius: 3px;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .overlay  {
+            width: 80%;
+            height: 80%;
+            background: rgb(0, 2, 1,0.3);
+            position: absolute;
+            display: none;
+        }
+        .popUp  {
+            height: 90%;
+            background: #000;
+            width: 90%;
+
+        }
+        button {
+            color: #ffffff;
+            height: 28px;
+            width: 30%;
+            background: #2c71a9;
+            font-size: 20px;
+            border: none;
+        }
+        .pop-data  {
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="opn">
+
+            <div class="overlay" id="overlay">
+                <div class="popUp">
+                    <button class="btn " id="close">
+                        close
+                    </button>
+                      <div class="pop-data">
+                        <h1>This  is  A  Popup </h1>
+                        <p>I  am  a  modal</p>
+                      </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <button class="btn-opn" id="open">
+            open modal 
+        </button>
+    </header>
+    
+
+    <script src="/modal/index.js"></script>
+</body>
+</html>
